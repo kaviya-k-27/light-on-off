@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light ON/OFF</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+             text-align: center;
+        }
+        .center{
+            border:3px dotted black;
+            height:60px;
+            padding:10px;
+            background-color: aqua;
+        }
+         button{
+            background-color: orangered;
+            padding:20px;
+        }
+        button:hover{
+            background-color: green;
+            box-shadow: 3px 3px 3px white;
+        }
+        .top{
+            margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="center">
+            <h1>LIGHT ON/OFF</h1>
+        </div>
+        <br>
+        <button onclick="on()">On</button>
+         <button onclick="off()">Off</button>
+        <div class="top">
+            <img  id="Display">
+        </div>
+
+    </div>
+    <script>
+    function on(){
+        document.getElementById("Display").src="imageon.JFIF ";
+    }
+    function off(){
+        document.getElementById("Display").src="imageoff.JFIF ";
+    }
+    </script>
+</body>
+</html>
